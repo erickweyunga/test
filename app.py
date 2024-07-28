@@ -3,11 +3,13 @@ from tireless import run
 
 # import the routes
 from pages.page import bp as page
+from pages.career import bp as career
 from pages.contact import bp as contact
 from pages.about import bp as about
 
 # register the routes
 app.register_blueprint(page)
+app.register_blueprint(career)
 app.register_blueprint(contact)
 app.register_blueprint(about)
 
